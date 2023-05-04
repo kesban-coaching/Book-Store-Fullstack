@@ -11,4 +11,10 @@ Steps:
 - Example: "dev": "nodemon app.js"
 - Allow imports of libraries / packages using import:
   - state the prop "type": "module" in package.json
-- Setup Express app 
+- Setup Express app (see example code in app.js)
+- Start the express / backend server on a port with listen() function
+- Install the CORS package which allows accessing our routes from a frontend
+- `npm i cors`
+- Import cors in the code: `import cors from cors`
+- Activate cors in the code: `api.use(cors())` 
+- Now the backend should be reachable from the frontend with fetch!
